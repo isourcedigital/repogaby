@@ -6,17 +6,34 @@
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 <script>
 $(document).ready(function() {
-    var alto = $(window).height(); 
-    var ancho = $(window).width(); 
-    $('iframe').height(alto).width(ancho);
+    
+    
+        $(window).on( "orientationchange", function( event ) {
+                   console.log("This device is in " + event.orientation + " mode!" );
+                   alto = $(window).height(); 
+                   ancho = $(window).width(); 
+                   console.log(alto);
+                   console.log(ancho);
+                   $('iframe').height(alto).width(ancho);
+        });
+	// You can also manually force this event to fire.
+	$(window).orientationchange();
+    
+    
+    
+     
 });
- 
+
+
+
 </script>
 </head>
 
 <body style="margin:0px 0px 0px 0px;">
-    <iframe src="http://www.isourcedev.com/klblogResponsive/"></iframe>
+   <iframe src="http://www.isourcedev.com/klblogResponsive/" frameborder="no" ></iframe>
 </body>
 </html>
