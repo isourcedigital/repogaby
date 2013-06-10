@@ -12,26 +12,7 @@
 </head>
 
 <body style="margin:0px 0px 0px 0px;">
-    <script>
-$(document).ready(function() {
-    
-    
-        $(window).on( "orientationchange", function( event ) {
-                   console.log("This device is in " + event.orientation + " mode!" );
-                   alto = $(window).height(); 
-                   ancho = $(window).width(); 
-                   console.log(alto);
-                   console.log(ancho);
-                   $('iframe').height(alto).width(ancho);
-        });
-	// You can also manually force this event to fire.
-	$(window).orientationchange();
-    
-    
-    
-     
-});
-</script>
-   <iframe src="http://www.isourcedev.com/klblogResponsive/public_html" frameborder="no"></iframe>
+
+   <iframe src="http://www.isourcedev.com/klblogResponsive/public_html"></iframe>
 </body>
 </html>
