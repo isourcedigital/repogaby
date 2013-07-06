@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.hello-world"
         version   = "3.0">
-    <name>KL BLOG DEMO</name>
+    <name>KL BLOG DEMO FRONTEND </name>
 
     <description>
         KL BLOG DEMO FRONTEND
